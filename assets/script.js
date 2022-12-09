@@ -3,7 +3,8 @@ function load() {
     var data = new Date();
     var hour = data.getHours();
     var h1 = document.getElementById('title');
-    msg.innerHTML = `Now it is ${hour} hours.`
+    var min = data.getMinutes();
+    msg.innerHTML = `Now it is ${hour} hours and ${min} minutes.`
     if (hour >= 0 && hour < 12) {
         //GOOD MORNING
         photo.innerHTML = '<img src="./assets/morning.jpg" alt = "time of the day">'
